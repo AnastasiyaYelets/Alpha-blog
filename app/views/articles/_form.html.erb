@@ -10,38 +10,41 @@
       </ul>
     </div>
   <% end %>
-  <div class="panel panel-default">
+  <div class="center jumbotron">
+  <div class="panel">
     <div class="panel-body">
 
   <div class='row'>
     <div class='col-xs-12'>
 
-        <div class="col-sm-8" margin="10px">
+        <div class="col-sm-8 col-md-8" padding="20px">
           <%= f.label :title %>
         </div>
-        <div class="col-sm-8" margin="10px">
+        <div class="col-sm-8 col-md-8" padding="20px">
           <%= f.text_field :title, class: "form-control", placeholder: "Title of article", autofocus: true %>
         </div>
 
 
-        <div class="col-sm-8">
+        <div class="col-sm-8 col-md-8" padding="20px">
           <%= f.label :description %>
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-8 col-md-8" padding="20px">
           <%= f.text_area :description, class: "form-control", placeholder: "Description of article", autofocus: true %>
       </div>
+<br>
 
+      </div>
+    </div>
+    <div class="button center" >
+          <div class="col-md-8 actions" >
+            <div class="col-sm-offset-2 col-sm-10">
 
-      <div class="actions">
-        <div class="col-sm-offset-2 col-sm-10">
-
-  <%= f.submit class: 'btn btn-primary btn-lg' %>
-  </div>
-  </div>
+      <%= f.submit class: 'btn btn-primary btn-lg' %>
+      </div>
       </div>
     </div>
 
-
   </div>
   </div>
+</div>
 <% end %>
