@@ -31,8 +31,16 @@
         <div class="col-sm-8 col-md-8" padding="20px">
           <%= f.text_area :description, class: "form-control", placeholder: "Description of article", autofocus: true %>
       </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-8 col-md-8">
+            <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
+            <% cb.label(class: "checkbox-inline input_checkbox") {cb.check_box(class: "checkbox") + cb.text} %>
+            <% end %>
+          </div>
+        </div>
+      </div>
 <br>
-
       </div>
     </div>
     <div class="button center" >
